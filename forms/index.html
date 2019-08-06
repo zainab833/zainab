@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <script src="script.js"></script>
+</head>
+<body onload="alert">
+    <style>
+    .input-group{
+        margin-bottom: 10px
+    }
+    </style>
+    <h1>Registration form</h1>
+    <script>
+        alert("javascript")
+    </script>
+    <form action="">
+    <div class="input-group">
+    <label for="name">name</label>
+    <input type="text" name="name" placeholder= "what can we call you?" onkeyup= "typingName(this);">
+    <span id="name-helper"></span>
+    </div>
+    
+    <div class="input-group">
+            <label for="address">address</label>
+            <input type="text"address="adress"id=address>
+            </div>
+            <div class="input-group">
+                    <label for="email">email</label>
+                    <input type="text"email="email"id=email onkeypress="typingName">
+                    </div>
+                    <div class="input-group">
+                            <label for="password">password</label>
+                            <input type="text"password="email"id=password onkeypress="typingName(this);">
+                            </div>        
+                            <span id="name-helper"></span>
+                            <div class="input-group">
+                                    <label for="confirm-password">confirm password</label>
+                                    <input type="text"confirm password="email"id=confirm-password onkeypress="confirmpass(this);">
+                                    </div>        
+                                    <span id="name-helper"></span>
+    <div class="input-group">
+        <label for="sex">sex</label>
+        <input type="radio"name="sex" id="sex" value="female">female
+    </div>
+    <div class="input-group">
+            <label for="married">marrital status</label>
+            <input type="text"single="married"id=married>
+            </div>
+    <div class="input-group">
+            <label for="bio">bio</label>
+            <textarea name="bio" id="bio"></textarea>
+            </div>
+
+    
+</body>
+</html>

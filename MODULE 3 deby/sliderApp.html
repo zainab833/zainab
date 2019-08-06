@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMAGE SLIDER APPLICATION</title>
+
+    </head>
+    <body>
+        <!-- default image-->
+        <center>
+        <img src="images/fatima.png" id= "def">
+
+        <script type= "text/javascript">
+            
+           //collects all images
+           var allImages = ["images/rose0.jpg","images/rose1.jpg","images/rose2.png","images/sss.jpg","images/grey.png","images/fatima.png"];
+
+            //GETS THE ID OF THE DEFAULT IMAGE
+            var def = document.getElementById("def")
+            //starting position
+            var index = 0;
+            //timing the slider
+            var handletiming= setInterval(slider, 2000);
+                
+            //handles sliding effect
+            function slider(){
+                def.setAttribute("src", allImages[index]);
+                index++;
+                if( index > allImages.length -1){
+                    index = 0;
+                }
+            }
+        </script>
+        </center>
+    </body>
+</html>
